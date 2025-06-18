@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda Quora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="agenda-app">
+    <aside class="sidebar">
+      <div class="logo">Q</div>
+      <nav>
+        <button class="nav-btn active">Agenda</button>
+        <button class="nav-btn">Tarefas</button>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <span class="empresa">Quora</span>
+      </header>
+      <section class="content">
+        <div class="calendar-panel">
+          <div class="calendar-header">
+            <button id="prevMonth">&lt;</button>
+            <span id="monthYear"></span>
+            <button id="nextMonth">&gt;</button>
+          </div>
+          <ul class="calendar-days" id="calendarDays"></ul>
+        </div>
+        <div class="agenda-panel">
+          <h2 id="selectedDateTitle">Compromissos do dia</h2>
+          <ul id="eventsList"></ul>
+          <div class="add-event">
+            <input type="text" id="eventInput" placeholder="Novo compromisso...">
+            <button id="addEventBtn">Adicionar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
