@@ -1,0 +1,23 @@
+{
+  "name": "electron-calendar-app",
+  "version": "1.0.0",
+  "description": "A simple calendar application built with Electron.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "calendar",
+    "app"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^25.9.8"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0"
+  }
+}
